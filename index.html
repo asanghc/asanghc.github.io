@@ -1,23 +1,27 @@
 <!DOCTYPE html> 
 <html>
   <head>
-    <title>start</title>
+    <title>search</title>
   </head>
   
-  <body>
-    <h1>It works!</h1>  
+  <body>  
     <form name="searchform" onSubmit="return dosearch();">
         Search:
         <select name="sengines">
+        <option value="https://duckduckgo.com/?hps=1&q=" selected>DDG</option>
+        <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
         <option value="http://www.google.com/search?q=" selected>Google</option>
         <option value="http://www.altavista.com/web/results?q=">Alta Vista</option>
-        <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile</option>
+        <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
         <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
         </select>
         For:
         <input type="text" name="searchterms">
         <input type="submit" name="SearchSubmit" value="Search">
         </form>
+
+
+
     <p>blah!</p>
     <script type="text/javascript">
         function dosearch() {
@@ -26,6 +30,6 @@
         window.location.href = submitto;
         return false;
         }
-        </script> 
+    </script> 
   </body>
 </html>
