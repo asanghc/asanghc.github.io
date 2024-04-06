@@ -5,33 +5,32 @@
   </head>
   <table>
     <tr>
-      <th><form name="searchform" onSubmit="return dosearch();">
-        Search:
-        <select name="sengines">
-        <option value="https://duckduckgo.com/?hps=1&q=" selected>DDG</option>
-        <option value="http://www.google.com/search?q=" selected>Google</option>
-        <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
-        </select>
-        For:
-        <input type="text" name="searchterms">
-        <input type="submit" name="SearchSubmit" value="Search">
-        </form></th>
-      <th><form name="searchform" onSubmit="return dosearch();">
-        Search:
-        <select name="mengines">
-        <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
-        <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
-        </select>
-        For:
-        <input type="text" name="searchterms">
-        <input type="submit" name="SearchSubmit" value="Search">
-        </form></th>
-      <th>Country</th>
+        <th>
+            <form name="searchform" onSubmit="return dosearch();">
+            <select name="sengines">
+            <option value="https://duckduckgo.com/?hps=1&q=" selected>DDG</option>
+            <option value="http://www.google.com/search?q=" selected>Google</option>
+            <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
+            </select>
+            <input type="text" name="searchterms">
+            <input type="submit" name="SearchSubmit" value="Search">
+            </form>
+        </th>
+        <th>
+            <form name="searchform" onSubmit="return dosearch();">
+            <select name="mengines">
+            <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
+            <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
+            </select>
+            <input type="text" name="searchterms">
+            <input type="submit" name="SearchSubmit" value="Search">
+            </form></th>
+        <th>Country</th>
     </tr>
     <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
+      <td>2L</td>
+      <td>2C</td>
+      <td>2R</td>
     </tr>
     <tr>
       <td>Centro comercial Moctezuma</td>
@@ -43,13 +42,10 @@
     
 <h1>============================</h1>
         
-    
-
     <script type="text/javascript">
         function dosearch() {
         var sf=document.searchform;
         var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
-        var submitto = sf.mengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
         window.location.href = submitto;
         return false;
         }
