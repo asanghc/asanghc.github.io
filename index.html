@@ -3,8 +3,9 @@
   <head>
     <title>search</title>
   </head>
-  <body>  
-    <form name="searchform" onSubmit="return dosearch();">
+  <table>
+    <tr>
+      <th><form name="searchform" onSubmit="return dosearch();">
         Search:
         <select name="sengines">
         <option value="https://duckduckgo.com/?hps=1&q=" selected>DDG</option>
@@ -14,18 +15,34 @@
         For:
         <input type="text" name="searchterms">
         <input type="submit" name="SearchSubmit" value="Search">
-        </form>
+        </form></th>
+      <th><form name="searchform" onSubmit="return dosearch();">
+        Search:
+        <select name="mengines">
+        <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
+        <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
+        </select>
+        For:
+        <input type="text" name="searchterms">
+        <input type="submit" name="SearchSubmit" value="Search">
+        </form></th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table> 
+  <body>  
+    
 <h1>============================</h1>
-        <form name="searchform" onSubmit="return dosearch();">
-            Search:
-            <select name="mengines">
-            <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
-            <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
-            </select>
-            For:
-            <input type="text" name="searchterms">
-            <input type="submit" name="SearchSubmit" value="Search">
-            </form>
+        
     
 
     <script type="text/javascript">
