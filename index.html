@@ -6,31 +6,12 @@
   <table>
     <tr>
         <th>
-            <form name="searchform" onSubmit="return dosearch();">
-            <select name="sengines">
-            <option value="https://duckduckgo.com/?hps=1&q=" selected>DDG</option>
-            <option value="http://www.google.com/search?q=" selected>Google</option>
-            <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
-            </select>
-            <input type="text" name="searchterms">
-            <input type="submit" name="SearchSubmit" value="Search">
-            </form>
+blah
         </th>
         <th>
-            <form name="searchform" onSubmit="return dosearch();">
-            <select name="mengines">
-            <option value="https://www.metacrawler.com/serp?q=" selected>metacrawler!</option>
-            <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile!</option>
-            </select>
-            <input type="text" name="searchterms">
-            <input type="submit" name="SearchSubmit" value="MetaSearch">
-            </form></th>
+blah2
         <th>
-            <form action="/action_page.php">
-                <label for="gsearch">Search Google:</label>
-                <input type="search" id="gsearch" name="gsearch">
-                <input type="submit">
-              </form>
+blah3
         </th>
     </tr>
     <tr>
@@ -39,9 +20,9 @@
       <td>2R</td>
     </tr>
     <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
+      <td>3L</td>
+      <td>3C</td>
+      <td>3R</td>
     </tr>
   </table> 
   <body>  
@@ -67,14 +48,5 @@
 
 <h1>============================</h1>
         
-    <script type="text/javascript">
-        function dosearch() {
-        var sf=document.searchform;
-        var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
-        window.location.href = submitto;
-        return false;
-        }
-    </script> 
-
 </body>
 </html>
